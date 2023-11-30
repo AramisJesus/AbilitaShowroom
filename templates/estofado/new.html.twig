@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Estofados{% endblock %}
+
+{% block body %}
+    <h1>Create new Estofados</h1>
+
+    {{ include('estofado/_form.html.twig') }}
+
+    <a href="{{ path('app_estofado_index') }}">back to list</a>
+{% endblock %}

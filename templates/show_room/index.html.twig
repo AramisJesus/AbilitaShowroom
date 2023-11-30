@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ShowRoomController!{% endblock %}
+
+{% block body %}
+
+<header style="width: 100%;" class="container-fluid " >
+   
+    <img class="logo width="150" height="40" class="d-inline-block align-text-top"" src="{{ asset('images/logo.svg') }}" alt="Symfony!"/>
+
+</header>
+
+<main>
+    <div class="fila container-fluid">
+
+      <a href="{{ path('app_cozinha') }}">
+        <div  class="card blue">
+          <h2>Cozinha</h2>
+
+        </div>
+      </a>
+
+
+      <a href="">
+        <div  class="card green">
+          <h2>Closet</h2>
+          <img src="" alt="">
+
+        </div>
+      </a>
+
+      <a href="{{ path('app_estofado_index') }}">
+        <div  class="card red">
+          <h2>Estofados</h2>
+        </div>
+      </a>
+
+    </div>
+    
+
+</div>
+
+
+
+</main>
+
+<footer>
+
+</footer>
+{% endblock %}

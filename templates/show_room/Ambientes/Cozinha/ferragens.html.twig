@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ShowRoomController!{% endblock %}
+
+{% block body %}
+
+<header style="width: 100%;" class="container-fluid " >
+   
+    <img class="logo width="150" height="40" class="d-inline-block align-text-top"" src="{{ asset('images/logo.svg') }}" alt="Symfony!"/>
+
+</header>
+
+<main>
+  
+    <div class="border"></div>
+      <div class="art container-fluid border">
+              <div class="aventos col-sm-5 mx-auto">
+                <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="{{ asset('images/Ferragens/AventosHS.jpg') }}" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Aventos HS</h5>
+                        
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="{{ asset('images/Ferragens/aventos.jpg') }}" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Aventos HF</h5>
+                        
+                      </div>
+                    </div>
+                   
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                  
+                 
+              </div>
+  
+             
+              <div class="box col-sm-5 container p-2 my-2 ">
+                    <h5>Articuladores Aventos</h1>
+                        <p>Sistema de portas de elevação AVENTOS proporciona alto conforto de movimento ao armário superior.</p>
+    
+    
+              </div>
+    </div>
+  
+    <div class="border"></div>
+  
+      <div class="boxBlum container-fluid d-flex justify-content-center align-items-center column center border">
+          <div class="box col-sm-5 container p-2 my-2 ">
+              <h5>Sistema Box Blum</h1>
+                  <p>Gavetas de metal Blum com acabamento inox e amortecimento Blumontion.</p>
+  
+  
+          </div>
+          <div class="col-sm-5 mx-auto d-flex justify-content-center align-items-center">
+            <div class="card" style="width: 320px;">
+              <img class="card-img-top" src="{{ asset('images/Ferragens/legra.png') }}" alt="Card image">
+              <div class="card-body text-center">
+                <h4 class="card-title">Legrabox</h4>
+                <!-- Conteúdo adicional do card aqui -->
+              </div>
+            </div>
+          </div>
+       
+      </div>
+  
+      <div>
+          <div></div>
+          <div></div>
+      </div>
+  
+      <div>
+          <div></div>
+          <div></div>
+      </div>
+     
+  </main>
+
+<footer>
+
+</footer>
+{% endblock %}

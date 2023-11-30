@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Estofados index{% endblock %}
+
+{% block body %}
+<header class="container-fluid " >
+   
+    <img class="logo width="150" height="40" class="d-inline-block align-text-top"" src="{{ asset('images/logo.svg') }}" alt="Symfony!"/>
+
+</header>
+<main class="container">
+    
+
+    <div class="container-fluid ">
+    <table style="margin-top: 20px;" class="table border ">
+        <thead>
+            <tr>
+                
+                <th>Estofados</th>
+                <th>Valor</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for estofado in estofados %}
+            <tr>
+               
+                <td>{{ estofado.name }}</td>
+                <td>R$ {{ estofado.Valor }}</td>
+                <td>
+                    <a href="{{ path('app_estofado_show', {'id': estofado.id}) }}">Mostrar</a>
+                    <a href="{{ path('app_estofado_edit', {'id': estofado.id}) }}">Editar</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    
+    <a  href="{{ path('app_estofado_new') }}">Adicionar</a>
+    </div>
+</main >
+{% endblock %}

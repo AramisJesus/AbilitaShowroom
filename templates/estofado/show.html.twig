@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Estofados{% endblock %}
+
+{% block body %}
+    <h1>Estofados</h1>
+    
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ estofado.id }}</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>{{ estofado.name }}</td>
+            </tr>
+            <tr>
+                <th>Valor</th>
+                <td>{{ estofado.Valor }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_estofado_index') }}">back to list</a>
+
+    <a href="{{ path('app_estofado_edit', {'id': estofado.id}) }}">edit</a>
+
+    {{ include('estofado/_delete_form.html.twig') }}
+{% endblock %}

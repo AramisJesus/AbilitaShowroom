@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Estofados{% endblock %}
+
+{% block body %}
+    <h1>Edit Estofados</h1>
+
+    {{ include('estofado/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_estofado_index') }}">back to list</a>
+
+    {{ include('estofado/_delete_form.html.twig') }}
+{% endblock %}

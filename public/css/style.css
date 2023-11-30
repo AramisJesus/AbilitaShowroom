@@ -1,0 +1,102 @@
+header {
+   background-color: #808080;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 10px;
+}
+
+.fila {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.add {
+   
+
+}
+.card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+    align-items: center;
+   
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.blue {
+    border-left: 3px solid #4895ff;
+}
+.green {
+    border-left: 3px solid #3bb54a;
+
+}
+.red {
+    border-left: 3px solid #b3404a;
+
+}
+
+.card h2 {
+    color: #696969;
+    
+    text-align: center;
+
+}
+
+.art{
+    display: flex;
+    flex-direction: column;
+    
+    
+ }
+
+.aventos{
+display: flex;
+   
+flex-direction: column;
+     
+max-width: 350px;
+max-height: 350px;
+ 
+padding-top: 20px;
+    
+     
+ 
+ }
+
+.box {
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+    text-align: center ;
+  }
+  @media (max-width: 825px) {
+    header {
+     display: flex;
+     justify-content: center;
+    }
+ 
+     .image {
+          
+     max-width: 64px;
+     max-height: 64px;
+     background-color: #FAEBD7;
+         
+ 
+     }
+     .fila {
+       flex-direction: column;
+       align-items: center;
+       
+     }
+    
+   }
